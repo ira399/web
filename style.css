@@ -5,7 +5,7 @@
 }
 body{
 
-     background-image: url("new\ image.jpg");
+     background-image: url("photo.jpg");
     line-height: 1.6;
     
     
@@ -14,7 +14,8 @@ body{
 
    
 h1{
-    font-size: 18px;
+    font-size: 20px;
+    color: aqua;
     
 }
 nav{
@@ -24,4 +25,7 @@ justify-content: center;
 gap: 12.5rem;
 padding: 1rem;
 border-bottom: 1px solid grey;
+}
+img {
+    padding: 10px;
 }

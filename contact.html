@@ -1,38 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <nav>
-    <a href="about.html"width="200" height="200">About</a>
-    <a href="skills.html"width="200" height="200">Skills</a>
-    <a href="projects.html"width="200" height="200">Projects</a>
-    <a href="contact.html"width="200" height="200">Contact</a>
-    <a href="index.html"width="200" height="200">index</a>
-</nav>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            gap: 12.5rem;
+            padding: 1rem;
+            border-bottom: 1px solid grey;
+        }
+
+        /* CENTER LOGIN FORM */
+        .container {
+            height: 90vh; /* Full screen height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-box {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        input {
+            display: block;
+            width: 250px;
+            padding: 10px;
+            margin: 10px auto;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: aqua;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #00b3b3;
+        }
+    </style>
 </head>
-<body>  
-    <header>
-<h2>Contact Me</h2>
-<input type="email" placeholder="Email" required><br>
-<input type="password" placeholder="Password" required><br>
-<input type="number" placeholder="Number" required><br>
 
+<body>
 
+    <nav>
+        <a href="index.html">Index</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+    </nav>
 
-  
-    <button onclick="contactMe()">Send Message</button>
-    </header>
-</section>
- <style>
-    p {
-        background-image: url(cigaa.jpg);
-    }
- </style>
+    <div class="container">
+        <div class="login-box">
+            <h2>Contact Me</h2>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <input type="number" placeholder="Number" required>
+            <button>Send Message</button>
+        </div>
+    </div>
 
- 
-
- 
 </body>
 </html>
